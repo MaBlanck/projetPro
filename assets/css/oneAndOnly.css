@@ -1,0 +1,358 @@
+/*HOMEPAGE.CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+:root {
+    --blue: #041325;
+    --grey: #d1d2cd;
+    box-sizing: border-box;
+}
+html {
+    box-sizing: border-box;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #020317;
+    color: white;
+    font-family: 'Libre Baskerville';
+}
+h1 {
+    color: white;
+    text-align: center;
+    background-color: #030c18;
+    margin: 0;
+    font-family: 'Dancing Script';
+}
+h2, h3, h4 {
+    font-family: 'Dancing Script';
+    font-size: 2em;
+}
+li {
+    font-family: 'Libre Baskerville';
+    font-size: 1em;
+}
+.accessibility {
+    position: absolute;
+    left: -15000px;
+}
+.mainVideo{
+    position: relative;
+}
+.mainVideoRow video {
+    position: relative;
+    z-index: 0;
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    font-family: 'Dancing Script';
+    color: white;
+    left:0; 
+    right:0;
+    font-size: 3em;
+    font-weight: 700;
+    height: 900px;
+}
+.overlay h2 {
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    font-family: 'Dancing Script';
+    color: white;
+    left:55%;
+    bottom: 10%; 
+    font-size: 1.1em;
+    font-weight: 700;
+}
+#nav {
+    z-index: 10;
+    font-size: 1.2em;
+    position:absolute;
+    top: 0 ;
+    left: 0;
+}
+
+nav .btn {
+    width: 100%;
+    font-size: 1.3;
+    font-weight: 600;
+}
+nav .btn:hover{
+    border-bottom: 2px solid #020317;
+}
+#mainHeader {
+    background-color: #041325;
+}
+#mainContent {
+    height: 100vh;
+}
+#logoImg {
+    width: 80px;
+    height: auto;
+}
+#project {
+    background-color: #020317;
+}
+#pageContent {
+    background-color: #020317;
+    color: #d1d2cd;
+    font-size: 2em;
+    font-family: 'Dancing Script';
+}
+#quote {
+    background-color: #041325;
+    color: white;
+}
+
+#virtualTour {
+    background-color: #041325;
+}
+#boatID {
+    color: white;
+    background-color: #041325;
+}
+#captainOhMyCaptain{
+    background-color: #041325;
+    color: white;
+}
+#bookYourTrip {
+    background-color: #041325;
+}
+#socialMedia {
+    background-color: #041325;
+}
+#navLinkPhone{
+    display: none;
+}
+#specs {
+    background-color: #d1d2cd;
+}
+#headingOne, #headingTwo, #headingThree, #headingFour, #headingFive {
+    background-color: #d1d2cd;
+}
+.crew {
+    background-color: #041325;
+    color: white;
+}
+/*WAVE DISPLAY*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+.wave-up {
+    background-color: #041325;
+}
+.wave-up path {
+    fill:#020317;
+}
+.wave-down {
+    background-color: #020317;
+}
+.wave-down path {
+    fill: #041325;
+}
+/*END WAVE DISPLAY*/
+
+.card {
+    background-color: #041325;
+    font-family: 'Dancing Script';
+    font-size: 2em;
+}
+.border-left {
+    color: #d1d2cd;
+}
+.card-title {
+    font-size: 2em;
+}
+.btn {
+    font-size: 0.8em;
+}
+.secondTitle{
+    color: white;
+    font-family: 'Dancing Script' ;
+    font-size: 3em;
+}
+.thirdTitle {
+    color: white;
+    font-family: 'Dancing Script' ;
+    font-size: 3em;
+}
+.accordion {
+    padding: 0;
+    background-color: white;
+}
+.card .card-body ul li, 
+.card .card-body p {
+color: #d1d2cd;
+list-style: none;
+}
+#bvi {
+    background-color: #041325;
+    color: white;
+}
+#middleWest {
+    background-color: #041325;
+    color: white;
+}
+.mapIsland {
+    position: relative;
+    width: 100%;
+}
+
+.bviLink {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    color: white;
+    padding: 1%;
+    background-color: #101e44;
+    border-radius: 10%;
+    font-size: 1.2em;
+}
+.northWestLink{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    color: white;
+    padding: 1%;
+    background-color: #101e44;
+    border-radius: 10%;
+    font-size: 1.2em;
+}
+.middleWestLink{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    color: white;
+    padding: 1%;
+    background-color: #101e44;
+    border-radius: 10%;
+    font-size: 1.2em;
+}
+.southIndiesLink {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    color: white;
+    padding: 1%;
+    background-color: #101e44;
+    border-radius: 10%;
+    font-size: 1.2em;
+}
+.linkButtonText {
+    position: absolute;
+    top: 68%;
+    left: 25%;
+    font-size: 1.5em;
+    color: #041325;
+    font-weight: 500;
+}
+.bvi {
+    background-color: #020317;
+    color: white;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1900px){
+    .mainTitle {
+        font-size: 4em;
+    }
+    .secondMainTitle {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 1200px){
+    .mainTitle {
+        font-size: 2.5em;
+    }
+    .secondMainTitle {
+        font-size: 1em;
+    }
+    .overlay{
+        height: 600px;
+    }
+    .overlay h2 {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 768px){
+    .mainTitle {
+        font-size: 1em;
+    }
+    .secondMainTitle {
+        font-size: 0.5em;
+    }
+    .overlay{
+        height: 400px;
+    }
+    .overlay h2 {
+        font-size: 0.7em;
+    }
+    nav .btn {
+    width: 100%;
+    font-size: 1.3;
+    font-weight: 600;
+    color: white;
+    background-color: #020317;
+}  
+    
+}   #nav {
+    font-size: 1.2em;
+    position:absolute;
+    width: 100%;
+} 
+.linkButtonText {
+    display: none;
+}  
+
+@media screen and (max-width: 660px){
+    #nav{
+    font-size: 1.2em;
+    position:absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+}
+    nav .btn {
+    width: 100%;
+    font-size: 1.3;
+    font-weight: 600;
+    color: white;
+    background-color: #020317;
+}    
+
+    .overlay{
+        height: 250px;
+    }
+    .overlay h2 {
+        font-size: 0.5em;
+        left:0;
+        right: 0;
+        bottom: 0; 
+    }
+}
+/*NAVBAR*/
+@media screen and (max-width: 952px){
+    .welcomeText {
+    position: absolute;
+    top: 18%;
+    left: 55%;
+    font-size: 1.5em;
+}
+}
+@media screen and (max-width: 650px){
+    .bviLink, .northWestLink, .middleWestLink, .southIndiesLink, .welcomeText {
+        display: none;
+    }
+    #navLinkPhone{
+    display: flex;
+}
+
+}
+/*FIN HOMEPAGE.CSS*/

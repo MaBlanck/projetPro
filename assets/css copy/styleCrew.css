@@ -1,0 +1,47 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Dancing Script', cursive;
+}
+p,
+a {
+    font-family: 'Libre Baskerville', serif;
+}
+video {
+    background-size: cover;
+    position: fixed;
+}
+body {
+    /*background-image: url("../img/logo/received_2485277825096782\(1\).jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;*/
+}
+
+
+.card {
+    background-color: #0D1C43;
+}
+.btn {
+    background-color:#d1d2cd ;
+}
+hr {
+    width: auto;
+    border-top:  0.01rem solid #d1d2cd;
+}
+.quote {
+    background-color: #d1d2cd;
+}
+footer {
+    background-color: #101E44;
+    height: 100px;
+}
+nav {
+    background-color: #101E44;
+}
+a {
+    color: inherit;
+}

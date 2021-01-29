@@ -1,0 +1,5 @@
+AuthName "Zone de controle"
+AuthUserFile "C:\Users\Leno\Desktop\Felicia\captain\.htpasswd"
+AuthType Basic
+Require valid-user
+ErrorDocument 404 /error404.html
