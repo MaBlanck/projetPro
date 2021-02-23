@@ -5,9 +5,11 @@ require_once(__DIR__ . '/header.php');
     <div class="container-fluid mainVideo">
         <div class="row mainVideoRow">
             <video src="assets/img/SailFelicia.mp4" class="embed-responsive" autoplay="" loop="" muted=""></video>
+            <img src="/assets/img/boat2.jpeg" alt="" class="welcomePict">
             <div class="overlay text-center">
                 <h1 class="accessibility text-center">Sail Felicia</h1>
                 <h2 class="secondMainTitle">Sail anywhere, feels like home everywhere</h2>
+                <h3 class="phoneTitle">Sail Felicia</h3>
             </div>
         </div>
     </div>
@@ -21,19 +23,19 @@ require_once(__DIR__ . '/header.php');
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar nav  text-center">
                         <li class="nav-item text-white col-12 col-md-2">
-                            <a class="nav-link btn rounded" href="http://felicia/">Home</a>
+                            <a class="nav-link btn " href="http://felicia/" autofocus>Home</a>
                         </li>
                         <li class="nav-item col-12 col-md-3">
-                            <a class="nav-link btn rounded" href="/indexBoat.php">The Boat & Crew</a>
+                            <a class="nav-link btn " href="/indexBoat.php">The Boat & Crew</a>
                         </li>
                         <li class="nav-item col-12 col-md-3 text-center">
-                            <a class="nav-link btn rounded" href="/indexDestination.php">Destination</a>
+                            <a class="nav-link btn  " href="/indexDestination.php">Destination</a>
                         </li>
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn rounded" href="/portfolio.php">Portfolio</a>
+                            <a class="nav-link btn  " href="/portfolio.php">Portfolio</a>
                         </li>
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn rounded" href="/bookyourtrip.php">Book Your Trip</a>
+                            <a class="nav-link btn " href="/bookyourtrip.php">Booking</a>
                         </li>
                     </ul>
                 </div>
@@ -58,8 +60,8 @@ require_once(__DIR__ . '/header.php');
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p>Hi, i'm Felicia. I'm a 65 foot inch Catamaran.<br> In this world, i've only three sisters
-                        left.<br>I was born in .... and imagine by Mr..... in ....date.....</p>
+                    <p>Hi, i'm Felicia. I'm a 65 foot inches Catamaran.<br> In this world, i've only three sisters
+                        left.<br>I was born in '99. Since that day, I've made two world tour.</p>
                 </div>
             </div>
             <div class="row justify-content-end">
@@ -106,7 +108,7 @@ require_once(__DIR__ . '/header.php');
             </div>
             <div class="col-12 col-md-12 col-lg-4 my-3">
                 <div class="card text-white border-left h-100">
-                    <img src="assets/img/5.jpeg" class="card-img-top p-3" alt="...">
+                    <img src="assets/img/east-indies-mapResize.jpg" class="card-img-top p-3" alt="painting of east indies islands">
                     <div class="card-body">
                         <h5 class="card-title">Destination</h5>
                         <p class="card-text">Get a Slice of it! See what you can explore and find on the islands all
@@ -159,20 +161,20 @@ require_once(__DIR__ . '/header.php');
         <div class="row">
             <div class="col-4 text-center p-5"><i class="fab fa-facebook-f fa-3x"></i></div>
             <div class="col-4 text-center p-5"><i class="fab fa-instagram fa-3x"></i></div>
-            <div class="col-4 text-center p-5"><i class="fab fa-tumblr-square fa-3x"></i></div>
+            <div class="col-4 text-center p-5"><i class="fab fa-youtube fa-3x"></i></div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row justify-content-end">
-            <div class="col-md-2 p-5"> <a href="#" class="btn btn-primary text-dark">Share</a></div>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-12 p-5"><a href="#" class="btn btn-success text-white">Share</a></div>
         </div>
     </div>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 text-center">Privacy</div>
-                <div class="col-12 col-md-4 text-center">Support</div>
-                <div class="col-12 col-md-4 text-center">Contact</div>
+                <div class="col-4 col-md-4 text-center">Privacy</div>
+                <div class="col-4 col-md-4 text-center">Support</div>
+                <div class="col-4 col-md-4 text-center">Contact</div>
             </div>
         </div>
     </footer>

@@ -73,11 +73,7 @@ require_once(__DIR__ . '/header.php');
 
             <div id="collapseOne" class="collapse text-white" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body text-center">
-                    <p>FELICIA /// 65 FEET /// Catamaran</p>
-                </div>
-                <div class="card-body text-center">
-                    <p>#Pax : 8 // Length: 65 Feet // Beam: 34,5 Feet <br>
-                        Draft: 7 Feet // Built : 1999 // Make: Privilege // Refit: 2017</p>
+                    <p> <?php echo 'Coming Soon' ?> </p>
                 </div>
                 <div class="card-body text-center">
                     </p>
@@ -94,9 +90,9 @@ require_once(__DIR__ . '/header.php');
             </div>
             <div id="collapseTwo" class="collapse text-white" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="card-body">
-                            <p></p>
+                    <div class="col-md-12">
+                        <div class="card-body text-center">
+                            <p> <?php echo 'Coming Soon' ?> </p>
                         </div>
                     </div>
                 </div>
@@ -113,19 +109,7 @@ require_once(__DIR__ . '/header.php');
             </div>
             <div id="collapseThree" class="collapse text-white" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body text-center">
-                    <ul>
-                        <li>Salon Tv / Salon Stereo / Sat Tv / iPod/Device Hookups</li>
-                        <li>Sun Awning / Hammock / Deck Shower / Bimini</li>
-                        <li>Special Diets / BBQ</li>
-                        <li>Nude: Inq / Hairdryers</li>
-                        <li># Dine: ln8 // # Port Hatches : 26</li>
-                        <li>Pets Aboard: No / Children Ok / Any age, babies welcome!</li>
-                        <li>Elevators: No / Wheel Chair Access : No</li>
-                        <li>Generator: - x 2 / / Inverter: 4,500 watt / / Voltages220/110</li>
-                        <li>Water Maker : 35GPH / / Water Cap. : 500 gals</li>
-                        <li>Ice Maker / / Sailing Instructions / / Internet Access</li>
-                        <li>Onboard WIFI</li>
-                    </ul>
+                    <p> <?php echo 'Coming Soon' ?> </p>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-6 bg-success text-center">
@@ -149,24 +133,7 @@ require_once(__DIR__ . '/header.php');
             </div>
             <div id="collapseFour" class="collapse text-white" aria-labelledby="headingFour" data-parent="#accordionExample">
                 <div class="card-body text-center">
-                    <ul>
-                        <li>Kneeboard</li>
-                        <li>Dinghy size : 15' RIB center console // Dinghy hp : 90HP // Dinghy # pax : 7</li>
-                        <li>Swim Platform : Scoop Steps</li>
-                        <li>Water Skis Adult & Kids</li>
-                        <li>Floating Mats</li>
-                        <li>Tube</li>
-                        <li>Kayaks (2 Pax): 1</li>
-                        <li>Wake Board</li>
-                        <li>Beach Games</li>
-                        <li>Boarding Ladder (Loc/Type): S/S off scoop steps</li>
-                        <li>Fishing Gear</li>
-                        <li>SU Paddle Boards : 2</li>
-                        <li>Gear TypeTrolling and Casting</li>
-                        <li>Rods : 2 each</li>
-                        <li>Kite Boarding</li>
-                        <li>Floating flamingoWakeboardNoodlesTowable tube</li>
-                    </ul>
+                    <p> <?php echo 'Coming Soon' ?> </p>
                 </div>
             </div>
         </div>
@@ -179,14 +146,11 @@ require_once(__DIR__ . '/header.php');
                 </div>
             </div>
             <div id="collapseFive" class="collapse text-white" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum autem vero, dolores
-                        quia corporis ipsum tenetur hic praesentium natus, dicta excepturi omnis doloremque, modi
-                        explicabo exercitationem nulla architecto sit.</p>
+                <div class="card-body text-center">
+                    <p> <?php echo 'Coming Soon' ?> </p>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 <svg class="wave-down" viewBox="0 0 1198.7 94.1" preserveAspectRatio="xMaxYMid slice">
     <path class="wave-down" d="M1198.7 31c1.9-0.4-222.5-39.3-489.9 23.1C242 152 0 39.3 0 39.3V0h1198.7V31z">
@@ -207,7 +171,7 @@ require_once(__DIR__ . '/header.php');
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 text-center">
-                <img src="/assets/img/BoatImage2.jpeg" alt="" class="img-thumbnail" height="250px">
+                <img src="/assets/img/boat2.jpeg" alt="" class="img-thumbnail" height="250px">
             </div>
             <div class="col-md-6 align-self-center text-center">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fuga. Fugit numquam
@@ -229,7 +193,7 @@ require_once(__DIR__ . '/header.php');
             </div>
             <div class="d-inline-flex col-md-6 order-0 order-md-1 text-center">
                 <div class="col-12 w-100 h-100">
-                    <img src="/assets/img/BoatImage1.jpeg" alt="" class="img-thumbnail" height="250px">
+                    <img src="/assets/img/boat1.jpeg" alt="" class="img-thumbnail" height="250px">
                 </div>
             </div>
         </div>
@@ -326,32 +290,36 @@ require_once(__DIR__ . '/header.php');
             </div>
         </div>
     </div>
-
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-md-6 align-self-center">
                 <div class="row">
                     <div class="col-md-12 align-self-center">
                         <h3>Chef</h3>
-                        <p><br>Lorem, ipsum.<br>Lorem, ipsum dolor.<br>Chef/Hostess<br>License: STCW 10<br>
+                        <p><br>Sonia<br>Chef/Hostess<br>License: STCW 10<br>
                             <hr>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aspernatur adipisci corporis nobis, alias dicta laudantium temporibus repellat! Veniam, consequatur!
-                            <hr>
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam ipsa repellat adipisci itaque quia laborum quis quos quaerat ab!
-                            <hr>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nemo itaque facilis distinctio, voluptates esse sit assumenda ut inventore commodi.
-                            <hr>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab placeat ipsa repellat eligendi, voluptatibus vitae ex molestiae ipsum quos quisquam!
-                    </div>
-                    <div class="col-12 text-center mt-3">
-                        <img src="./assets/img/logo2.jpg" alt="">
+                            Sonia grew up in Les Sables d'Olonne, a small town on the French Atlantic coast, where the “Vendée
+                            Globe”, this legendary sailing race around the world, sets off.
+                            With a solid hotel trade and catering training, she began her professional life in Parisian restaurants
+                            before leaving for Saint Barth where she worked in a villa rental agency. She discovered sailing,
+                            traveling and exploring different gastronomies with Thailand, Venezuela, Argentina, New York, San
+                            Francisco and of course, the West Indies.
+                            With a French coast license and STW95 in hand, she started working on the water as a cook for
+                            charters in the Caribbean, in the Mediterranean Sea (Corsica, Porquerolles, the creeks of Marseille,
+                            etc.). She is also discovering the joy of being a team member on a round trip cross the Atlantic.
+                            When in she is in France, she sails on the Canal du Midi on her river boat which is her home.
+                            She relish home cooking and she sets her menus according to the preferences and needs of the
+                            guests. She adapts her cooking to the diets and wishes of each one while respecting the “eating
+                            together” which is for her an important moment of pleasure and sharing on the water. She loves
+                            French gastronomy but also local and family cuisine. She masters the work of raw or cooked fish ...
+                            She is aware of new eating habits (gluten free, lactose free ...) while respecting
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="https://fakeimg.pl/577x900/ffffff,128/000,255" class="img-fluid rounded" />
+                        <img src="assets/img/sonia.jpg" class="img-fluid rounded" />
                     </div>
                 </div>
             </div>

@@ -24,9 +24,9 @@ require_once(__DIR__ . '/header.php');
             <div class="col-12 mapIsland">
                 <p class="linkButtonText text-center">Click on blue buttons to see <br> what's waiting for you!</p>
                 <a href="#bvi" class="bviLink">Virgin Islands</a>
-                <a href="#northWest" class="northWestLink">NOrthWestIndies</a>
-                <a href="#middleWest" class="middleWestLink">MiddleWestIndies</a>
-                <a href="#south" class="southIndiesLink">SouthIndies</a>
+                <a href="#northWest" class="northWestLink">North West Indies</a>
+                <a href="#middleWest" class="middleWestLink">Middle West Indies</a>
+                <a href="#south" class="southIndiesLink">South Indies</a>
                 <img src="assets/img/east-indies-map.jpg" alt="" class="img-fluid rounded">
             </div>
         </div>
@@ -34,12 +34,12 @@ require_once(__DIR__ . '/header.php');
 <section id="navLinkPhone">
     <div class="container-fluid text-center p-4">
         <div class="row justify-content-center">
-            <div class="col-6 col-md-6 p-3"><a href="#bvi">BVI</a></div>
-            <div class="col-6 col-md-6 p-3"><a href="#northWest">North West Indies</a></div>
+            <div class="col-6 col-md-6 p-3"><a href="#bvi" class="btn btn-success">BVI</a></div>
+            <div class="col-6 col-md-6 p-3"><a href="#northWest" class="btn btn-success">North West Indies</a></div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-6 col-md-6 p-3"><a href="#middleWest">Middle West Indies</a></div>
-            <div class="col-6 col-md-6 p-3"><a href="#south">South Indies</a></div>
+            <div class="col-6 col-md-6 p-3"><a href="#middleWest" class="btn btn-success">Middle West Indies</a></div>
+            <div class="col-6 col-md-6 p-3"><a href="#south" class="btn btn-success">South Indies</a></div>
         </div>
     </div>
 </section>
