@@ -7,14 +7,31 @@ require_once(__DIR__ . '/header.php');
             <h1>The Boat</h1>
         </div>
     </div>
-    <div class="row justify-content-center">
-        <nav>
-            <ul class="nav justify-content-center bg-transparent text-white">
-                <li class="nav-item text-white">
-                    <a class="nav-link rounded" href="/index.php">Home Page</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="container-fluid text-center p-5">
+        <div class="row justify-content-center">
+            <nav id="nav" class="navbar navbar-expand-lg mt-5">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><img src="/assets/img/Felicia_emblem_W_resize.png" title="going back to home page" class="logo rounded" alt="logo emblème du bateau Felicia">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar nav text-center">
+                        <li class="nav-item text-white col-12 col-md-2">
+                            <a class="nav-link btn" href="http://felicia/" autofocus><img src="/assets/img/Felicia_Logo_W_resize.png" title="going back to home page" class="logo rounded" alt="logo emblème du bateau Felicia"></a>
+                        </li>
+                        <li class="nav-item col-12 col-md-3">
+                            <a class="nav-link btn text-white p-0" href="/indexDestination.php">Destination</a>
+                        </li>
+                        <li class="nav-item col-12 col-md-3">
+                            <a class="nav-link btn text-white p-0" href="/portfolio.php">Portfolio</a>
+                        </li>
+                        <li class="nav-item col-12 col-md-3">
+                            <a class="nav-link btn text-white p-0" href="/bookyourtrip.php">Booking</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
 </div>
 

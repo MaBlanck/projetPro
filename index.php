@@ -5,7 +5,7 @@ require_once(__DIR__ . '/header.php');
     <div class="container-fluid mainVideo">
         <div class="row mainVideoRow">
             <video src="assets/img/SailFelicia.mp4" class="embed-responsive" autoplay="" loop="" muted=""></video>
-            <img src="/assets/img/boat2.jpeg" alt="" class="welcomePict">
+            <img src="/assets/img/boat2.jpeg" alt="picture of the boat Felicia outside" class="welcomePict">
             <div class="overlay text-center">
                 <h1 class="accessibility text-center">Sail Felicia</h1>
                 <h2 class="secondMainTitle">Sail anywhere, feels like home everywhere</h2>
@@ -15,27 +15,27 @@ require_once(__DIR__ . '/header.php');
     </div>
     <div class="container-fluid text-center p-5">
         <div class="row justify-content-center">
-            <nav id="nav" class="navbar navbar-expand-lg">
+            <nav id="navHome" class="navbar navbar-expand-lg">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i>
+                    <span class="navbar-toggler-icon"><img src="/assets/img/Felicia_emblem-resize.png" title="going back to home page" class="logo rounded" alt="logo emblème du bateau Felicia">
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar nav  text-center">
                         <li class="nav-item text-white col-12 col-md-2">
-                            <a class="nav-link btn " href="http://felicia/" autofocus>Home</a>
+                            <a class="nav-link btn " href="http://felicia/" autofocus><img src="/assets/img/Felicia_Logo_B_resize.png" title="going back to home page" class="logo rounded" alt="logo emblème du bateau Felicia"></a>
                         </li>
                         <li class="nav-item col-12 col-md-3">
-                            <a class="nav-link btn " href="/indexBoat.php">The Boat & Crew</a>
+                            <a class="nav-link btn p-0" href="/indexBoat.php">The Boat & Crew</a>
                         </li>
                         <li class="nav-item col-12 col-md-3 text-center">
-                            <a class="nav-link btn  " href="/indexDestination.php">Destination</a>
+                            <a class="nav-link btn  p-0" href="/indexDestination.php">Destination</a>
                         </li>
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn  " href="/portfolio.php">Portfolio</a>
+                            <a class="nav-link btn  p-0" href="/portfolio.php">Portfolio</a>
                         </li>
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn " href="/bookyourtrip.php">Booking</a>
+                            <a class="nav-link btn p-0" href="/bookyourtrip.php">Booking</a>
                         </li>
                     </ul>
                 </div>
@@ -108,7 +108,7 @@ require_once(__DIR__ . '/header.php');
             </div>
             <div class="col-12 col-md-12 col-lg-4 my-3">
                 <div class="card text-white border-left h-100">
-                    <img src="assets/img/east-indies-mapResize.jpg" class="card-img-top p-3" alt="painting of east indies islands">
+                    <img src="assets/img/east-indies-map.jpg" class="card-img-top p-3" alt="painting of east indies islands">
                     <div class="card-body">
                         <h5 class="card-title">Destination</h5>
                         <p class="card-text">Get a Slice of it! See what you can explore and find on the islands all
