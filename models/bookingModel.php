@@ -1,24 +1,18 @@
 <?php 
-require_once(__DIR__ .'../../config/config.php');
+require_once(__DIR__ .'/database.php');
 
-    class Booking{
+    class Booking extends Database{
 
+    const MAX_NUMBER_OF_PASSENGER = 8;
     public $geographicLocation = '';
     public $dateFrom = '';
     public $dateTo = '';
     public $passengerNumber = 0;
-    public $kidsOnBoat = '';
+    public $kidsOnBoat = 0;
     public $email = '';
-    private $pdo;
+    public $id = 0;
+    public $name = '';
 
-    public function __construct(){
-
-        try {
-            $this->pdo = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8;', DB_USER, DB_PASSWORD,  [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
-        } catch (Exception $e) {
-            die($e->getMessage());
-        }
-    }
 
     public function addClientInfoBooking()
     {
@@ -31,6 +25,12 @@ require_once(__DIR__ .'../../config/config.php');
         $pdoStatement->bindValue(':kids_on_boat', $this->kidsOnBoat, PDO::PARAM_STR);
         $pdoStatement->bindValue(':email', $this->email, PDO::PARAM_STR);
         return $pdoStatement->execute();
+    }
+
+    public function getActivityList(){
+        $query = 'SELECT * FROM `activities`';
+        $pdoStatement = $this->pdo->query($query);
+        return $pdoStatement->fetchAll(PDO::FETCH_OBJ);
     }
 
     }

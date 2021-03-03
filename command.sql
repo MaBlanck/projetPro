@@ -1,0 +1,3 @@
+##Insérer les activités dans la table activities 
+
+INSERT INTO `activities` (`id`, `name`) VALUES (NULL, 'Active Sailing'), (NULL, 'Shopping'), (NULL, 'Listening/Dancing to Local Music'), (NULL, 'Moderate Sailing'), (NULL, 'Hiking Ashore'), (NULL, 'Playing Board Games or Cards'), (NULL, 'Sunning/Relaxing'), (NULL, 'Surfing'), (NULL, 'Swimming / Snorkeling'), (NULL, 'Kayaking'), (NULL, 'Stand-up Paddle Boarding'), (NULL, 'Beach Combing'), (NULL, 'Kite Surfing'), (NULL, 'Rendevous Scuba Diving'), (NULL, 'Spa Services'), (NULL, 'Waterskiing'), (NULL, 'Wake Boarding'), (NULL, 'Knee Boarding'), (NULL, 'Fishing'), (NULL, 'Beach Bars'), (NULL, 'Full Moon Party (when avbl)') 

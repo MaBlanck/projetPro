@@ -81,7 +81,13 @@ li {
     top: 0 ;
     left: 0;
 }
-nav.navDestination, nav.navBooking{
+.nav-link{
+    color: white !important;
+}
+.colorNavLink{
+    color: #041325 !important;
+}
+nav.navbar{
     z-index: 100;
 }
 nav .btn {
@@ -99,7 +105,6 @@ button>span.navbar-toggler-icon>img{
     width: 100%;
     height: auto;
     object-fit: cover;
-    aspect-ratio: 4/3;
 }
 #mainHeader {
     background-color: #041325;
@@ -117,8 +122,8 @@ button>span.navbar-toggler-icon>img{
 #pageContent {
     background-color: #020317;
     color: #d1d2cd;
-    font-size: 2em;
-    font-family: 'Dancing Script';
+    font-size: 1.5em;
+    font-family: 'Libre Baskerville';
 }
 #quote {
     background-color: #041325;
@@ -177,22 +182,29 @@ ul>li>a>img.logo {
     width: 100%;
     height: auto;
     object-fit: cover;
-    aspect-ratio: 4/3;
 }
 ul>li>a>img.logoWhite {
     width: 100%;
     height: auto;
     object-fit: cover;
-    aspect-ratio: 4/3;
     background-color: #020317;
 }
-
+.cardinalBtn{
+    background-color: #d1d2cd;
+}
+i.fa-bars{
+    background-color: transparent;
+    color: #d1d2cd;
+}
+i.homeBars{
+    background-color: transparent;
+    color: #020317;
+}
 .card img{
     border-radius: 0.5rem 0.5rem 0 0;
     width: 100%;
     object-fit: cover;
     height: max(10rem, 30vh);
-    aspect-ratio: 4/3;
     max-height: max(10rem, 30vh);
 }
 .card {
@@ -320,7 +332,6 @@ list-style: none;
     padding: 1%;
     width: 45%;
     object-fit: cover;
-    aspect-ratio: 4/3;
     max-height: max(10rem, 30vh);
 }
 #modal {
@@ -338,6 +349,7 @@ list-style: none;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s, visibility 1s;
+    z-index: 10000;
 }
 #modal img {
     border: solid 5px white;
@@ -397,6 +409,9 @@ list-style: none;
     .secondMainTitle {
         font-size: 0.5em;
     }
+    .mainVideoRow video {
+    display: none;
+}
     .overlay{
         height: 400px;
     }
@@ -457,9 +472,15 @@ list-style: none;
     #navLinkPhone{
     display: flex;
 }
+.colorNavLink{
+    color: white !important;
+}
     .mainVideoRow video {
     display: none;
 }   
+ul>li>a>img.logo {
+    display: none;
+}
     .secondTitle{
     color: white;
     font-family: 'Dancing Script' ;

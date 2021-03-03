@@ -45,7 +45,7 @@ if(isset($_POST['sendCompleteForm'])){
         $formError['email'] = 'Please enter an email';
     }
     if (!empty($_POST['passengerNumber'])) {
-        if (isset($_POST['passengerNumber']) && $_POST['passengerNumber'] > 0 && $_POST['passengerNumber'] <= 8) {
+        if (isset($_POST['passengerNumber']) && $_POST['passengerNumber'] > 0 && $_POST['passengerNumber'] <= Booking::MAX_NUMBER_OF_PASSENGER) {
             $booking->passengerNumber = filter_var($_POST['passengerNumber'], FILTER_VALIDATE_INT);
         } else {
             $formError['passengerNumber'] = 'Your number of passenger is invalid';
@@ -54,17 +54,24 @@ if(isset($_POST['sendCompleteForm'])){
         $formError['passengerNumber'] = 'Please tell us how many passenger you\'ll be on the boat';
     }
     if (isset($_POST['kidsOnBoat'])) {
-            if(is_numeric($_POST['kidsOnBoat']) && $_POST['kidsOnBoat'] >= 0 ) {
-            $booking->kidsOnBoat = filter_var($_POST['kidsOnBoat'], FILTER_VALIDATE_INT);
+            if(is_numeric($_POST['kidsOnBoat']) && $_POST['kidsOnBoat'] >= 0 && $_POST['kidsOnBoat'] <= Booking::MAX_NUMBER_OF_PASSENGER - 1 ) {
+            $booking->kidsOnBoat = filter_var($_POST['kidsOnBoat'], FILTER_VALIDATE_INT);   
             }else {
                 $formError['kidsOnBoat'] = 'You can\'t have negative number of children';
             }
     } else {
         $formError['kidsOnBoat'] = 'Please tell us how many children will be on the boat';
     }
+    /* if($booking->passengerNumber != 0){
+        $totalPassenger = ($booking->passengerNumber + $booking->kidsOnBoat);
+        if($totalPassenger > Booking::MAX_NUMBER_OF_PASSENGER){
+            $formError['totalPassenger'] = 'Number of passenger out of the limit. The limit is ' . Booking::MAX_NUMBER_OF_PASSENGER .'.';
+        } */
+    }
     if(empty($formError)){
         $booking->addClientInfoBooking();
-        $validMessage = 'Great! Your informations has been sent. You will be in touch with the captain soon';
+        mail($booking->email, 'Hello from Felicia', 'Your booking form has been sent to the captain. The captain will get you in touch soon. Thank you. Felicia\'s Team');
+        $validMessage = 'Great! Your informations has been sent. Go check your email. See you soon on Felicia';
     }
 }
 $currentDateTime = date('Y-m-d');
