@@ -14,16 +14,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar nav text-center">
                         <li class="nav-item text-white col-12 col-md-2">
-                            <a class="nav-link btn" href="index.php" autofocus>Home</a>
+                            <a class="nav-link btn" href="/home" autofocus>Home</a>
                         </li>
                         <li class="nav-item col-12 col-md-3 text-center">
-                            <a class="nav-link btn  p-0" href="?view=destination">Destination</a>
+                            <a class="nav-link btn  p-0" href="/destination">Destination</a>
                         </li>
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn  p-0" href="?view=portfolio">Portfolio</a>
+                            <a class="nav-link btn  p-0" href="/portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn p-0" href="?view=booking">Booking</a>
+                            <a class="nav-link btn p-0" href="/booking">Booking</a>
                         </li>
                     </ul>
                 </div>
@@ -350,9 +350,9 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4 text-center p-5"><i class="fab fa-facebook-f fa-3x"></i></div>
-            <div class="col-4 text-center p-5"><i class="fab fa-instagram fa-3x"></i></div>
-            <div class="col-4 text-center p-5"><i class="fab fa-youtube fa-3x"></i></div>
+            <div class="col-4 text-center p-5"><a href="https://www.facebook.com/sailfeliciacatamaran" target="_blank" class="followLink"><i class="fab fa-facebook-f fa-3x"></i></a> </div>
+            <div class="col-4 text-center p-5"><a href="https://www.instagram.com/sailfelicia/?hl=fr" target="_blank" class="followLink"><i class="fab fa-instagram fa-3x"></i></a> </div>
+            <div class="col-4 text-center p-5"><a href="https://www.youtube.com/channel/UCTcMZfyi3EtUn79LYBcuCjw" target="_blank" class="followLink"><i class="fab fa-youtube fa-3x"></i></a></div>
         </div>
     </div>
     <footer>

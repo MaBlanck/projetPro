@@ -1,7 +1,7 @@
 <section id="mainHeader">
     <div class="container-fluid mainVideo">
         <div class="row mainVideoRow">
-            <video src="assets/img/SailFelicia.mp4" class="embed-responsive" autoplay="" loop="" muted=""></video>
+            <video type="video/mp4" src="/assets/img/SailFelicia.mp4" class="embed-responsive" autoplay="" loop="" muted=""></video>
             <img src="/assets/img/boat2.jpeg" alt="picture of the boat Felicia outside" class="welcomePict">
             <div class="overlay text-center">
                 <h1 class="accessibility text-center">Sail Felicia</h1>
@@ -20,19 +20,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar nav text-center">
                         <li class="nav-item text-white col-12 col-md-2">
-                            <a class="nav-link btn" href="index.php" autofocus><img src="/assets/img/Felicia_Logo_B_resize.png" title="going back to home page" class="logo img-fluid rounded" alt="logo emblème du bateau Felicia"></a>
+                            <a class="nav-link btn" href="/home" autofocus><img src="/assets/img/Felicia_Logo_B_resize.png" title="going back to home page" class="logo img-fluid rounded" alt="logo emblème du bateau Felicia"></a>
                         </li>
                         <li class="nav-item col-12 col-md-3">
-                            <a class="nav-link btn p-0 colorNavLink" href="?view=boat-and-crew">The Boat & Crew</a>
+                            <a class="nav-link btn p-0 colorNavLink" href="/boat-and-crew">The Boat & Crew</a>
                         </li>
                         <li class="nav-item col-12 col-md-3 text-center">
-                            <a class="nav-link btn  p-0 colorNavLink" href="?view=destination">Destination</a>
+                            <a class="nav-link btn  p-0 colorNavLink" href="/destination">Destination</a>
                         </li>
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn  p-0 colorNavLink" href="?view=portfolio">Portfolio</a>
+                            <a class="nav-link btn  p-0 colorNavLink" href="/portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn p-0 colorNavLink" href="?view=booking">Booking</a>
+                            <a class="nav-link btn p-0 colorNavLink" href="/booking">Booking</a>
                         </li>
                     </ul>
                 </div>
@@ -85,7 +85,7 @@
                         <h5 class="card-title">The Boat</h5>
                         <p class="card-text">Click on "The Boat" Link here, and keep on following the coconut trees
                             And the blue skysea.</p>
-                        <a href="?view=boat-and-crew" class="btn btn-success text-white">See the
+                        <a href="/boat-and-crew" class="btn btn-success text-white">See the
                             Boat
                         </a>
                     </div>
@@ -99,7 +99,7 @@
                         <p class="card-text">Then keep on surfin' to the Crew spot. Here you'll know everything
                             about the crew!
                         </p>
-                        <a href="?view=boat-and-crew" class="btn btn-success text-white">See the Crew</a>
+                        <a href="/boat-and-crew" class="btn btn-success text-white">See the Crew</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                         <p class="card-text">Get a Slice of it! See what you can explore and find on the islands all
                             over the Carabean sea
                         </p>
-                        <a href="?view=destination" class="btn btn-success text-white">See Destination</a>
+                        <a href="/destination" class="btn btn-success text-white">See Destination</a>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
     <div class="container text-center p-5">
         <div class="row justify-content-center">
             <p>Now if you want to know more about booking a trip with us, please click on that button. <br>
-                <a href="?view=booking" class="btn btn-success">Book Your Trip</a>
+                <a href="/booking" class="btn btn-success">Book Your Trip</a>
             </p>
         </div>
     </div>
@@ -156,14 +156,9 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4 text-center p-5"><i class="fab fa-facebook-f fa-3x"></i></div>
-            <div class="col-4 text-center p-5"><i class="fab fa-instagram fa-3x"></i></div>
-            <div class="col-4 text-center p-5"><i class="fab fa-youtube fa-3x"></i></div>
-        </div>
-    </div>
-    <div class="container-fluid text-center">
-        <div class="row">
-            <div class="col-12 p-5"><a href="/views/privateForm/signUpUser.php" class="btn btn-success text-white">Share</a></div>
+            <div class="col-4 text-center p-5"><a href="https://www.facebook.com/sailfeliciacatamaran" target="_blank" class="followLink"><i class="fab fa-facebook-f fa-3x"></i></a> </div>
+            <div class="col-4 text-center p-5"><a href="https://www.instagram.com/sailfelicia/?hl=fr" target="_blank" class="followLink"><i class="fab fa-instagram fa-3x"></i></a> </div>
+            <div class="col-4 text-center p-5"><a href="https://www.youtube.com/channel/UCTcMZfyi3EtUn79LYBcuCjw" target="_blank" class="followLink"><i class="fab fa-youtube fa-3x"></i></a></div>
         </div>
     </div>
     <footer>

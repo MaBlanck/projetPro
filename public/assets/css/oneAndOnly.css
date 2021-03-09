@@ -106,6 +106,7 @@ button>span.navbar-toggler-icon>img{
     height: auto;
     object-fit: cover;
 }
+
 #mainHeader {
     background-color: #041325;
 }
@@ -324,7 +325,7 @@ list-style: none;
     color: white;
 }
  /*IMAGES GALLERIES*/
- /* Style the Image Used to Trigger the Modal */
+ /* Style de l'images qui reçoit les images de la gallerie Portfolio */
 .galleryImg {
     border-radius: 5px;
     cursor: pointer;
@@ -371,14 +372,18 @@ list-style: none;
     font-weight: bold;
     transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
-
+.followLink{
+    color: #d1d2cd;
+}
+.followLink:hover{
+    color: #d1d2cd;
+}
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1900px){
     .mainTitle {
@@ -429,7 +434,7 @@ list-style: none;
 .linkButtonText {
     display: none;
 }  
-
+}
 @media screen and (max-width: 660px){
     #nav{
     font-size: 1.2em;
@@ -504,4 +509,3 @@ ul>li>a>img.logo {
     }
 }
 
-/*FIN HOMEPAGE.CSS*/

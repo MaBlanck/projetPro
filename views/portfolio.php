@@ -14,16 +14,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar nav text-center">
                         <li class="nav-item text-white col-12 col-md-2">
-                            <a class="nav-link btn" href="index.php" autofocus>Home</a>
+                            <a class="nav-link btn" href="/home" autofocus>Home</a>
                         </li>
                         <li class="nav-item col-12 col-md-3">
-                            <a class="nav-link btn  p-0" href="?view=boat-and-crew">The Boat & Crew</a>
+                            <a class="nav-link btn  p-0" href="/boat-and-crew">The Boat & Crew</a>
                         </li>
                         <li class="nav-item col-12 col-md-3 text-center">
-                            <a class="nav-link btn  p-0" href="?view=destination">Destination</a>
+                            <a class="nav-link btn  p-0" href="/destination">Destination</a>
                         </li>
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn p-0" href="?view=booking">Booking</a>
+                            <a class="nav-link btn p-0" href="/booking">Booking</a>
                         </li>
                     </ul>
                 </div>
@@ -31,7 +31,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="container text-center" id="imgGallery">
     <div class="row justify-content-center">
@@ -66,6 +65,20 @@
     <img src="">
 </figure>
 <section>
+    <div class="container-fluid text-center my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2>Videos</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>If you want to watch some videos of the boat, click this link ---> <a href="https://www.youtube.com/channel/UCTcMZfyi3EtUn79LYBcuCjw" target="_blank">See videos</a>
+                    <--- /p>
+            </div>
+        </div>
+
+    </div>
     <div class="container-fluid mt-5">
         <div class="row justify-content-center text-center">
             <div class="col-offset-6 col-md-6">
@@ -75,9 +88,9 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4 text-center p-5"><i class="fab fa-facebook-f fa-3x"></i></div>
-            <div class="col-4 text-center p-5"><i class="fab fa-instagram fa-3x"></i></div>
-            <div class="col-4 text-center p-5"><i class="fab fa-youtube fa-3x"></i></div>
+            <div class="col-4 text-center p-5"><a href="https://www.facebook.com/sailfeliciacatamaran" target="_blank" class="followLink"><i class="fab fa-facebook-f fa-3x"></i></a> </div>
+            <div class="col-4 text-center p-5"><a href="https://www.instagram.com/sailfelicia/?hl=fr" target="_blank" class="followLink"><i class="fab fa-instagram fa-3x"></i></a> </div>
+            <div class="col-4 text-center p-5"><a href="https://www.youtube.com/channel/UCTcMZfyi3EtUn79LYBcuCjw" target="_blank" class="followLink"><i class="fab fa-youtube fa-3x"></i></a></div>
         </div>
     </div>
     <footer>

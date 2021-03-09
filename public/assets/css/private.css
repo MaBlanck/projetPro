@@ -6,15 +6,12 @@
 body {
     margin: 0;
     padding: 0;
-    background: url("../img/lounge.jpeg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #041325;
+    color: #d1d2cd;
+ 
 }
 h1 {
     text-align: center;
-    background-color: black;
     opacity: 0.9;
     color: white;
 }
@@ -29,6 +26,11 @@ h2 {
     height: auto;
     padding: 0;
 }
+.congrats {
+    margin-top: 20vh;
+    height: 80vh;
+    width: 100vh;
+}  
 textarea{
     resize: none;
 }

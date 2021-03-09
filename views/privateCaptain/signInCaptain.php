@@ -1,23 +1,21 @@
 <?php
-require_once(__DIR__ . '../../../controller/signInUserCtrl.php');
-require_once(__DIR__ . '../../parts/signHeader.php');
+require_once(__DIR__ . '../../../controller/signInCaptainCtrl.php');
 ?>
-
     <div class="container text-center">
         <div class="row">
-            <h1 class="col-md-12">Hello User</h1>
+            <h1 class="col-md-12">Hello Captain</h1>
         </div>
     </div>
 
     <div class="container form">
         <div class="row">
             <div class="col-md-6 mx-auto">
-                <p>Enter the Travel Name and your password you use last page</p>
+                <p>Enter you login and password to connect to your dashboard</p>
                 <form action="" method="post">
                     <div class="form-group">
-                        <label for="travelName">Travel Name</label>
-                        <input type="text" class="form-control" name="travelName" id="travelName">
-                        <p class="text-danger"><?= isset($formError['travelName']) ? $formError['travelName'] : '' ?></p>
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" name="username" id="username">
+                        <p class="text-danger"><?= isset($formError['username']) ? $formError['username'] : '' ?></p>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
@@ -34,10 +32,6 @@ require_once(__DIR__ . '../../parts/signHeader.php');
             </div>
         </div>
     </div>
-
-
-
-
     <?php
     require_once(__DIR__ . '../../parts/footer.php');
     ?>

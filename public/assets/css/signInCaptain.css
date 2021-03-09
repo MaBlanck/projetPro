@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #020317;
+    color: white;
+    font-family: 'Libre Baskerville';
+}
+* {
+    box-sizing: border-box;
+}
+.form {
+    margin-top: 20vh;
+    height: 80vh;
+    width: 100vw;
+} 

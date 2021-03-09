@@ -1,5 +1,6 @@
 <?php
 require_once(__DIR__ . '../../../controller/travelInfoCtrl.php');
+require_once(__DIR__ .'../../parts/privateHeader.php')
 ?>
 
 <section id="travelInfos">
@@ -117,3 +118,6 @@ require_once(__DIR__ . '../../../controller/travelInfoCtrl.php');
         </form>
     </div>
 </section>
+<?php 
+require_once(__DIR__ .'../../parts/footer.php');
+?>

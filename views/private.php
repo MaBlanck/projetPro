@@ -5,7 +5,7 @@ require_once(__DIR__ . '/parts/privateHeader.php');
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 p-0">
-            <img src="assets/img/PrivateClub.png" alt="" class="privatePicture" />
+            <img src="/assets/img/PrivateClub.png" alt="" class="privatePicture" />
         </div>
     </div>
 </div>

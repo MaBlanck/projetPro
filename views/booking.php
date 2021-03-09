@@ -17,16 +17,16 @@ require(__DIR__ . '../../controller/bookingCtrl.php');
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar nav text-center">
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn" href="index.php" autofocus>Home</a>
+                            <a class="nav-link btn" href="/home" autofocus>Home</a>
                         </li>
                         <li class="nav-item col-12 col-md-3">
-                            <a class="nav-link btn p-0" href="?view=boat-and-crew">The Boat & Crew</a>
+                            <a class="nav-link btn p-0" href="/boat-and-crew">The Boat & Crew</a>
                         </li>
                         <li class="nav-item col-12 col-md-3 text-center">
-                            <a class="nav-link btn  p-0" href="?view=destination">Destination</a>
+                            <a class="nav-link btn  p-0" href="/destination">Destination</a>
                         </li>
                         <li class="nav-item col-12 col-md-2">
-                            <a class="nav-link btn  p-0" href="?view=portfolio">Portfolio</a>
+                            <a class="nav-link btn  p-0" href="/portfolio">Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -49,39 +49,39 @@ require(__DIR__ . '../../controller/bookingCtrl.php');
     <div class="row">
         <form method="POST" action="" class="col mx-auto">
             <div class="form-group">
-                <label for="geographicLocation">Choose your location</label>
-                <select class="<?= isset($formError['geographicLocation']) ? 'is-invalid' : '' ?> form-control" name="geographicLocation" id="geographicLocation" autofocus>
-                    <option <?= isset($booking->geographicLocation) ? '' : 'selected' ?> disabled>Pick a choice</option>
-                    <option value="British/US Virgin Island" <?= isset($booking->geographicLocation) ? ($booking->geographicLocation === 'British/US Virgin Island' ? 'selected' : '') : '' ?>>British/US Virgin Island</option>
-                    <option value="North West Indies" <?= isset($booking->geographicLocation) ? ($booking->geographicLocation === 'North West Indies' ? 'selected' : '') : '' ?>>North West Indies</option>
-                    <option value="Middle West Indies" <?= isset($booking->geographicLocation) ? ($booking->geographicLocation === 'Middle West Indies' ? 'selected' : '') : '' ?>>Middle West Indies</option>
-                    <option value="South Indie" <?= isset($booking->geographicLocation) ? ($booking->geographicLocation === 'South Indie' ? 'selected' : '') : '' ?>>South Indie</option>
+                <label for="geoLocation">Choose your location</label>
+                <select class="<?= isset($formError['geoLocation']) ? 'is-invalid' : '' ?> form-control" name="geoLocation" id="geoLocation" autofocus>
+                    <option <?= isset($booking->geoLocation) ? '' : 'selected' ?> disabled>Pick a choice</option>
+                    <option value="British/US Virgin Island" <?= isset($booking->geoLocation) ? ($booking->geoLocation === 'British/US Virgin Island' ? 'selected' : '') : '' ?>>British/US Virgin Island</option>
+                    <option value="North West Indies" <?= isset($booking->geoLocation) ? ($booking->geoLocation === 'North West Indies' ? 'selected' : '') : '' ?>>North West Indies</option>
+                    <option value="Middle West Indies" <?= isset($booking->geoLocation) ? ($booking->geoLocation === 'Middle West Indies' ? 'selected' : '') : '' ?>>Middle West Indies</option>
+                    <option value="South Indie" <?= isset($booking->geoLocation) ? ($booking->geoLocation === 'South Indie' ? 'selected' : '') : '' ?>>South Indie</option>
                 </select>
-                <div class="text-danger invalid-feedback"><?= isset($formError['geographicLocation']) ? $formError['geographicLocation'] : '' ?></div>
+                <div class="text-danger invalid-feedback"><?= isset($formError['geoLocation']) ? $formError['geoLocation'] : '' ?></div>
             </div>
             <p>If you wanna see one of those location please click that link (<a href="/indexDestination.php" target="_blank" title="redirect to portfolio page">go to see islands</a>) to see the
                 portfolio and the descriptions</p>
             <div class="form-group">
                 <label for="chooseDate">Pick up your travel dates</label>
                 <p>From : </p>
-                <input type="date" class="<?= isset($formError['chooseDateFrom']) ? 'is-invalid' : '' ?> form-control" name="chooseDateFrom" id="chooseDateFrom" min="<?= $currentDateTime ?>" aria-describedby="choiceOfTheDepartureDate" placeholder="MM/DD/YYYY" value="<?= isset($_POST['chooseDateFrom']) ? $_POST['chooseDateFrom'] : '' ?>">
-                <div class="text-danger invalid-feedback"><?= isset($formError['chooseDateFrom']) ? $formError['chooseDateFrom'] : '' ?></div>
+                <input type="date" class="<?= isset($formError['checkInDate']) ? 'is-invalid' : '' ?> form-control" name="checkInDate" id="checkInDate" min="<?= $currentDateTime ?>" aria-describedby="choiceOfTheDepartureDate" placeholder="MM/DD/YYYY" value="<?= isset($_POST['checkInDate']) ? $_POST['checkInDate'] : '' ?>">
+                <div class="text-danger invalid-feedback"><?= isset($formError['checkInDate']) ? $formError['checkInDate'] : '' ?></div>
             </div>
             <div class="form-group">
                 <p>To: </p>
-                <input type="date" class="<?= isset($formError['chooseDateTo']) ? 'is-invalid' : '' ?> form-control" name="chooseDateTo" id="chooseDateTo" min="<?= $currentDateTime ?>" aria-describedby="choiceOfTheReturnDate" placeholder="MM/DD/YYYY" value="<?= isset($_POST['chooseDateTo']) ? $_POST['chooseDateTo'] : '' ?>">
-                <div class="text-danger invalid-feedback"><?= isset($formError['chooseDateTo']) ? $formError['chooseDateTo'] : '' ?></div>
+                <input type="date" class="<?= isset($formError['checkOutDate']) ? 'is-invalid' : '' ?> form-control" name="checkOutDate" id="checkOutDate" min="<?= $currentDateTime ?>" aria-describedby="choiceOfTheReturnDate" placeholder="MM/DD/YYYY" value="<?= isset($_POST['checkOutDate']) ? $_POST['checkOutDate'] : '' ?>">
+                <div class="text-danger invalid-feedback"><?= isset($formError['checkOutDate']) ? $formError['checkOutDate'] : '' ?></div>
             </div>
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="passengerNumber">How many people travel (max: 8)</label>
-                    <input type="text" class="<?= isset($formError['passengerNumber']) ? 'is-invalid' : '' ?> form-control" name="passengerNumber" id="passengerNumber" value="<?= isset($_POST['passengerNumber']) ? $_POST['passengerNumber'] : '' ?>">
-                    <div class="text-danger invalid-feedback"><?= isset($formError['passengerNumber']) ? $formError['passengerNumber'] : '' ?></div>
+                    <label for="numberOfPassenger ">How many people travel (max: 8)</label>
+                    <input type="text" class="<?= isset($formError['numberOfPassenger']) ? 'is-invalid' : '' ?> form-control" name="numberOfPassenger" id="numberOfPassenger" value="<?= isset($_POST['numberOfPassenger']) ? $_POST['numberOfPassenger'] : '' ?>">
+                    <div class="text-danger invalid-feedback"><?= isset($formError['numberOfPassenger']) ? $formError['numberOfPassenger'] : '' ?></div>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="kidsOnBoat">Any kids? (Included in the total number of passengers)</label>
-                    <input type="number" class="<?= isset($formError['kidsOnBoat']) ? 'is-invalid' : '' ?> form-control" name="kidsOnBoat" id="kidsOnBoat" value="<?= isset($_POST['kidsOnBoat']) ? $_POST['kidsOnBoat'] : '' ?>">
-                    <div class="text-danger invalid-feedback"><?= isset($formError['kidsOnBoat']) ? $formError['kidsOnBoat'] : '' ?></div>
+                    <label for="kidsNumber">Any kids? (Included in the total number of passengers)</label>
+                    <input type="number" class="<?= isset($formError['kidsNumber']) ? 'is-invalid' : '' ?> form-control" name="kidsNumber" id="kidsOnBoat" value="<?= isset($_POST['kidsNumber']) ? $_POST['kidsNumber'] : '' ?>">
+                    <div class="text-danger invalid-feedback"><?= isset($formError['kidsNumber']) ? $formError['kidsNumber'] : '' ?></div>
                     <div class="text-danger invalid-feedbac"><?= isset($formError['totalPassenger']) ? $formError['totalPassenger'] : '' ?></div>
                 </div>
             </div>
@@ -126,4 +126,4 @@ require(__DIR__ . '../../controller/bookingCtrl.php');
         </div>
     </div>
 </div>
-<script src="assets/js/calendar.js"></script>
+<script src="/assets/js/calendar.js"></script>
