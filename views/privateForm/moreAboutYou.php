@@ -1,6 +1,9 @@
+<?php
+require_once(__DIR__ . '../../../controller/moreAboutYouCtrl.php');
+?>
 <section id="moreAboutYou">
     <h2 class="p-4">More 'bout you</h2>
-    <div class="container bg-light">
+    <div class="container">
         <form action="" method="POST">
             <div class="form-row d-flex justify-content-cente">
                 <div class="form-group col-md-6">
@@ -33,8 +36,10 @@
                         to ensure you have the best vacation possible? </label>
                     <textarea type="text" class="form-control" name="comments" id="comments"></textarea>
                 </div>
-                <button type="submit" name="saveMoreAboutYou" class="btn btn-success save">Save</button>
-                <button type="submit" name="confirmAllForm" class="btn btn-success next">Confirm form</button>
+                <div class="form-group">
+                    <button type="submit" name="saveMoreAboutYou" class="btn btn-success save" value="SAVE">SAVE</button>
+                    <button type="submit" name="confirmForm" class="btn btn-success next" value="NEXT -->">CONFIRM</button>
+                </div>
             </div>
         </form>
     </div>

@@ -5,7 +5,7 @@ $formError = array();
 $validMessage = null;
 
 /**
- * Contrôle le formulaire
+ * Contrôle du formulaire
  */
 if(isset($_POST['sendCompleteForm'])){
     //on instancie l'objet Booking au click du bouton

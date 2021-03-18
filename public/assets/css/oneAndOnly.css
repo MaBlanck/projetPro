@@ -161,6 +161,12 @@ button>span.navbar-toggler-icon>img{
     background-color: #041325;
     color: white;
 }
+.error {
+    height: 80vh;
+}
+.errorContent{
+    font-family: 'Libre Baskerville';
+}
 /*WAVE DISPLAY*/
 img {
     max-width: 100%;

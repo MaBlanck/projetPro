@@ -10,16 +10,9 @@ body {
     color: #d1d2cd;
  
 }
-h1 {
+h1, h2 {
     text-align: center;
-    opacity: 0.9;
-    color: white;
-}
-h2 {
-    text-align: center;
-    background-color: black;
-    opacity: 0.8;
-    color: white;
+
 }
 .privatePicture{
     width: 100vw;

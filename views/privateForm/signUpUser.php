@@ -1,7 +1,6 @@
 <?php
 require_once(__DIR__ . '../../../controller/signUpUserCtrl.php');
 require_once(__DIR__ . '../../parts/signHeader.php');
-
 ?>
 <div class="container-fluid text-center">
     <div class="row">

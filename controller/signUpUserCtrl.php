@@ -45,10 +45,10 @@ if (isset($_POST['signUpButton'])) {
     }
     //Vérification du nombre de passagers
     if (!empty($_POST['numberOfPassenger'])) {
-        $travel->numberOfPassenger = filter_var($_POST['numberOfPassenger'], FILTER_VALIDATE_INT);
+        $travel->numberOfPassenger = htmlentities($_POST['numberOfPassenger']);
     } else {
         $formError['numberOfPassenger'] = 'Wrong number';
-    }
+    }var_dump($formError);
     //si aucune erreur est relevé on appelle la méthode qui va récupérer les informations
     if (empty($formError)) {
         $getInfosTravel = $travel->getTravelInfo();
@@ -56,8 +56,10 @@ if (isset($_POST['signUpButton'])) {
         if ($getInfosTravel != false) {
             //on stocke dans l'attribut id de l'objet, l'id du champs dans la base de donnée qui a été retourné 
             $travel->id = $getInfosTravel->id;
-            //On update le mot de passe grâce à la méthode d el'objet Travel puis on redirige l'utilisateur
+            //On update le mot de passe grâce à la méthode de l'objet Travel puis on redirige l'utilisateur
             $travel->updatePasswordFromUser();
+            $_SESSION['travelName'] = $_POST['travelName'];
+            $_SESSION['numberOfPassenger'] = $_POST['numberOfPassenger'];
             header('location: /private/signup/user/validate');
         }
     }

@@ -1,64 +1,32 @@
 <?php
-require_once(__DIR__ . '../../../controller/travelInfoCtrl.php');
-require_once(__DIR__ .'../../parts/privateHeader.php')
+require_once(__DIR__ . '../../../controller/travelInfosCtrl.php');
+require_once(__DIR__ . '../../parts/privateHeader.php');
 ?>
 
 <section id="travelInfos">
-    <div class="container bg-light">
+    <div class="container">
         <h2 class="p-4">Travel Infos</h2>
         <form action="" method="POST">
             <div class="form-group">
-                <label for="charteredName">Chartered Name</label>
-                <input type="text" class="form-control" id="charteredName" aria-label="charteredName">
-                <label for="charteredDate">Chartered Date</label>
-                <div class="row">
+                <div class="row p-4">
+                    <h4 class="col-12">Chartered Date</h4>
                     <div class="col-12 col-md-6"> <label for="checkInDate">Check In Date</label>
                         <input type="date" name="checkInDate" class="form-control" id="checkInDate" min="<?= $currentDate ?>">
                     </div>
-                    <div class="col-12 col-md-6"><label for="checkInDate">Check Out Date</label>
+                    <div class="col-12 col-md-6"><label for="checkOutDate">Check Out Date</label>
                         <input type="date" name="checkOutDate" class="form-control" id="checkOutDate" min="<?= $currentDate ?>">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row p-4">
                     <div class="col-12 col-md-6">
                         <label for="pickUpDropOff">PICKUP/DROP OFF LOCATION</label>
                         <input type="text" name="pickUpDropOff" id="pickUpDropOff" class="form-control">
                     </div>
                     <div class="col-12 col-md-6">
-                        <label for="numberInParty">NUMBER IN PARTY</label>
-                        <input type="number" name="numberInParty" id="numberInParty" class="form-control">
+                        <label for="numberOfPassenger">NUMBER OF PASSENGERS</label>
+                        <input type="text" name="numberOfPassenger" id="numberOfPassenger" class="form-control" value="<?= $_SESSION['numberOfPassenger']?>">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 offset-md-3 text-center">
-                        <label for="cellNumber">CELL NUMBER</label>
-                        <input type="text" class="form-control" name="cellNumber" id="cellNumber" placeholder="+33 6 88 77 44 11">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h4>Charter Party Details</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-3">
-                        <label for="legalName">Legal Name</label>
-                        <input type="text" class="form-control" name="legalName" id="legalName">
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <label for="dob">D.O.B</label>
-                        <input type="text" class="form-control" name="dob" id="dob">
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <label for="passeportNumber">PASSEPORT NUMBER</label>
-                        <input type="text" class="form-control" name="passeportNumber" id="passeportNumber">
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <label for="expirationDate">EXPIRATION DATE</label>
-                        <input type="text" class="form-control" name="expirationDate" id="expirationDate" placeholder="YYYY/MM">
-                    </div>
-                </div>
-                <button type="text" name="addTraveller" class="btn btn-success">ADD New Passenger</button>
                 <div class="row">
                     <div class="col-12">
                         <h5>Flight Details</h5>
@@ -113,11 +81,13 @@ require_once(__DIR__ .'../../parts/privateHeader.php')
                     </div>
                 </div>
             </div>
-            <button type="submit" name="saveTravelInfo" class="btn btn-success save">Save</button>
-            <button type="submit" name="nextTravelInfo" class="btn btn-success next">Next -></button>
+            <div class="form-group">
+                <button type="submit" name="saveTravelInfos" class="btn btn-success save" value="SAVE">SAVE</button>
+                <button type="submit" name="nextFood" class="btn btn-success next" value="NEXT -->">NEXT --></button>
+            </div>
         </form>
     </div>
 </section>
-<?php 
-require_once(__DIR__ .'../../parts/footer.php');
+<?php
+require_once(__DIR__ . '../../parts/footer.php');
 ?>

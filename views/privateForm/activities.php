@@ -4,7 +4,7 @@ require_once(__DIR__ . '../../../controller/activitiesCtrl.php');
 
 <h2 class="p-4">Activities</h2>
 <section id="activities">
-    <div class="container-fluid bg-light text-center">
+    <div class="container-fluid text-center">
         <div class="form-row">
             <form action="" method="POST" class="col-12">
                 <div class="col-12">
@@ -16,7 +16,10 @@ require_once(__DIR__ . '../../../controller/activitiesCtrl.php');
                     <?php endforeach; ?>
                     <p>*** Please note a Fishing License is required in the BVI’s for anyone over the age of 18 that wishes to fish. This
                         application should be submitted prior to arrival for your charter vacation. Please inquire for instructions.</p>
-                    <button type="submit" name="nextActivities" class="btn btn-success">NEXT</button>
+                </div>
+                <div class="form-group">
+                    <button type="button" name="saveActivities" class="btn btn-success">SAVE</button>
+                    <button type="submit" name="nextMoreAboutYou" class="btn btn-success">NEXT</button>
                 </div>
             </form>
         </div>
