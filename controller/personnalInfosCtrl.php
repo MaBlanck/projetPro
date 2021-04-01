@@ -31,7 +31,7 @@ if (isset($_POST['savePersonnalInfo'])) {
         $personnal->dateOfBirth = htmlspecialChars($_POST['dateOfBirth']);
     }
 
-    //Vérification d ela date d'expiration
+    //Vérification de la date d'expiration
     if (!empty($_POST['expirationDate'])) {
         $personnal->expirationDate = htmlspecialChars($_POST['expirationDate']);
     }
@@ -49,5 +49,6 @@ if (isset($_POST['savePersonnalInfo'])) {
 }
 //On récupère les informations déjà enregistrées
 $personnalInfos = $personnal->getPersonnalInfoByUserId();
+//on éxécute la fonction pour vérifier si les attributs sont tous rempli, si c'est le cas, on affiche le bouton next, sinon on écrit un messa
 $nextButtonVisibleState = verifyEachObjectsAttributesIsNotEmpty($personnalInfos);
 
