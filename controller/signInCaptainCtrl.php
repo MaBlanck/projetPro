@@ -34,6 +34,7 @@ if (isset($_POST['signInBtn'])) {
             //si ma méthode retourne quelque chose, on verifie le mdp avec la fonction password_verify
             if(password_verify($admin->password ,$adminInfos->password)){
             //si la vérif est ok, on redirige l'utilisateur vers la page admin
+            $_SESSION['user'] = $admin->username;
                 header('location:/private/captain');
                 exit();
             }

@@ -2,6 +2,11 @@
 require_once(__DIR__ . '../../models/travel.php');
 $formError = array();
 $message = '';
+//Vérifie si l'utilisateur de la session n'existe pas, si c'est le cas, l'utilisateur est renvoyé sur la page d'erreur
+//protection URL
+if(!isset($_SESSION['user'])) {
+    header('location:' . DOMAIN_URL_PUBLIC . '/views/error404.php');
+};
 //on instancie l'objet Travel
         $travel = new Travel();
 //si le POST n'est pas vide et qu'il y click sur le bouton
@@ -33,7 +38,7 @@ if (!empty([$_POST])) {
                 //on affiche un message pour prévenir l'utilisateur que tout à fonctionné
                 $message = 'Vos informations ont bien été envoyées';
                 //on envoit un mail à l'email qui a été entrée qui contient un lien qui va rediriger vers la page d'inscription pour l'utilisateur
-                mail($travel->email, 'Hello beloved Chartered', 'follow this link --><a href="http://felicia.local/signup/user&name=' . $travel->name . '&mail=' . $travel->email . '&numberOfPassenger=' . $travel->numberOfPassenger . '">link</a>, to sign up for your cruise', 'Content-Type: text/html; charset=utf-8' . "\r\n");
+                mail($travel->email, 'Hello beloved Chartered', 'follow this link --><a href="' . DOMAIN_URL_PUBLIC .'/signup/user&name=' . $travel->name . '&mail=' . $travel->email . '&numberOfPassenger=' . $travel->numberOfPassenger . '">link</a>, to sign up for your cruise', 'Content-Type: text/html; charset=utf-8' . "\r\n");
             } else {
                 $formError['general']['error'] = 'Error';
             }

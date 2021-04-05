@@ -48,7 +48,7 @@ if (isset($_POST['signUpButton'])) {
         $travel->numberOfPassenger = htmlentities($_POST['numberOfPassenger']);
     } else {
         $formError['numberOfPassenger'] = 'Wrong number';
-    }var_dump($formError);
+    }
     //si aucune erreur est relevé on appelle la méthode qui va récupérer les informations
     if (empty($formError)) {
         $getInfosTravel = $travel->getTravelInfo();

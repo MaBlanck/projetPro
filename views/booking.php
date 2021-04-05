@@ -37,10 +37,9 @@ require(__DIR__ . '../../controller/bookingCtrl.php');
 <div class="container text-center">
     <div class="row">
         <div class="col-12">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur esse libero nam at sunt,
-                officiis sapiente
-                aspernatur, amet suscipit velit rerum voluptatem perferendis soluta tempore nemo eaque, sed cum
-                architecto.</p>
+            <p>Hello visitor <br>
+            On this page you can contact us in order to make the first step of your trip. <br>
+            Please fill all the input, and the captain will contact you soon by email to manage your cruise asap.</p>
         </div>
     </div>
 </div>
@@ -119,7 +118,8 @@ require(__DIR__ . '../../controller/bookingCtrl.php');
         <div class="col-12">
             <p>Very IMPORTANT:</p>
             <p>All those information are not stocked or exchange to anyone. Once the contact has been made between
-                you and the captain <br> those information are automaticaly destroy and further questions will be
+                you and the captain <br> those informations are automaticaly stored and will be destroy as soon as the final contact has been made. <br>
+                More questions will be
                 asked in a private and secure application. <br>
                 Felicia's owner, captain and crew are concerned about your data. It's the first crucial step to a trust relation.
             </p>

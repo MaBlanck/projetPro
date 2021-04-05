@@ -358,9 +358,8 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 text-center">Privacy</div>
-                <div class="col-12 col-md-4 text-center">Support</div>
-                <div class="col-12 col-md-4 text-center">Contact</div>
+                <div class="col-12 col-md-6 text-center"><a href="http://sailfelicia.alwaysdata.net/policy" target="_blank">Privacy</a></div>
+                <div class="col-12 col-md-6 text-center"><a href="http://sailfelicia.alwaysdata.net/contact" target="_blank">Contact</a></div>
             </div>
         </div>
     </footer>

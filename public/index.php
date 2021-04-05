@@ -1,5 +1,5 @@
 <?php 
-require_once(__DIR__ .'../../config/config.php');
+require_once(__DIR__ .'../../config/configPublic.php');
 require_once(__DIR__ .'../../controller/helpers/helpers.php');
 
     //Page Home
@@ -51,6 +51,14 @@ if (empty($_GET['view']) || $_GET['view'] === 'home') {
 } elseif ($_GET['view'] === 'private/signup/user/validate') {
     require(APP_ROOT . 'views/parts/privateHeader.php');
     require(APP_ROOT . 'views/privateForm/okPageUserSignUp.php');
+    //page de politique de confidentialité
+} elseif ($_GET['view'] === 'policy') {
+    require(APP_ROOT . 'views/parts/privateHeader.php');
+    require(APP_ROOT . 'views/privacyPolicy.php');
+    //page de contact
+} elseif ($_GET['view'] === 'contact') {
+    require(APP_ROOT . 'views/parts/privateHeader.php');
+    require(APP_ROOT . 'views/contact.php');
 } else {
     require(APP_ROOT . 'views/error404.php');
 }

@@ -74,7 +74,7 @@
         <div class="row">
             <div class="col-12">
                 <p>If you want to watch some videos of the boat, click this link ---> <a href="https://www.youtube.com/channel/UCTcMZfyi3EtUn79LYBcuCjw" target="_blank">See videos</a>
-                    <--- /p>
+                    <--- </p>
             </div>
         </div>
 
@@ -96,9 +96,8 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 text-center">Privacy</div>
-                <div class="col-12 col-md-4 text-center">Support</div>
-                <div class="col-12 col-md-4 text-center">Contact</div>
+                <div class="col-12 col-md-6 text-center"><a href="http://sailfelicia.alwaysdata.net/policy" target="_blank">Privacy</a></div>
+                <div class="col-12 col-md-6 text-center"><a href="http://sailfelicia.alwaysdata.net/contact" target="_blank">Contact</a></div>
             </div>
         </div>
     </footer>
